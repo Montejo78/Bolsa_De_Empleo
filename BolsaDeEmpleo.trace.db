@@ -1,0 +1,300 @@
+2023-03-26 16:00:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "ASPIRANTES" ya existe
+Table "ASPIRANTES" already exists; SQL statement:
+CREATE TABLE `aspirantes` (`cedula` VARCHAR(255) , `nombreCompleto` VARCHAR(255) , `edad` INTEGER , `anosExperiencia` INTEGER , `profesion` VARCHAR(255) , `telefono` VARCHAR(255) , PRIMARY KEY (`cedula`) ) [42101-214]
+2023-03-26 16:01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "ASPIRANTES" ya existe
+Table "ASPIRANTES" already exists; SQL statement:
+CREATE TABLE `aspirantes` (`cedula` VARCHAR(255) , `nombreCompleto` VARCHAR(255) , `edad` INTEGER , `anosExperiencia` INTEGER , `profesion` VARCHAR(255) , `telefono` VARCHAR(255) , PRIMARY KEY (`cedula`) ) [42101-214]
+2023-03-26 16:01:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "ASPIRANTES" ya existe
+Table "ASPIRANTES" already exists; SQL statement:
+CREATE TABLE `aspirantes` (`cedula` VARCHAR(255) , `nombreCompleto` VARCHAR(255) , `edad` INTEGER , `anosExperiencia` INTEGER , `profesion` VARCHAR(255) , `telefono` VARCHAR(255) , PRIMARY KEY (`cedula`) ) [42101-214]
+2023-03-28 00:19:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "ASPIRANTES" ya existe
+Table "ASPIRANTES" already exists; SQL statement:
+CREATE TABLE `aspirantes` (`cedula` VARCHAR(255) , `nombre` VARCHAR(255) , `edad` INTEGER , `anosExperiencia` INTEGER , `profesion` VARCHAR(255) , `telefono` VARCHAR(255) , PRIMARY KEY (`cedula`) ) [42101-214]
+2023-03-28 00:23:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "NOMBRE" no encontrada
+Column "NOMBRE" not found; SQL statement:
+INSERT INTO `aspirantes` (`cedula` ,`nombre` ,`edad` ,`anosExperiencia` ,`profesion` ,`telefono` ) VALUES (?,?,?,?,?,?) [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:749)
+	at org.h2.command.Parser.parseColumn(Parser.java:1256)
+	at org.h2.command.Parser.parseColumnList(Parser.java:1241)
+	at org.h2.command.Parser.parseInsert(Parser.java:1641)
+	at org.h2.command.Parser.parsePrepared(Parser.java:814)
+	at org.h2.command.Parser.parse(Parser.java:689)
+	at org.h2.command.Parser.parse(Parser.java:661)
+	at org.h2.command.Parser.prepareCommand(Parser.java:569)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:288)
+	at com.j256.ormlite.jdbc.JdbcDatabaseConnection.insert(JdbcDatabaseConnection.java:179)
+	at com.j256.ormlite.stmt.mapped.MappedCreate.insert(MappedCreate.java:91)
+	at com.j256.ormlite.stmt.StatementExecutor.create(StatementExecutor.java:464)
+	at com.j256.ormlite.dao.BaseDaoImpl.create(BaseDaoImpl.java:337)
+	at BolsaDeEmpleo.Menu.main(Menu.java:90)
+2023-03-28 00:24:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "nombre" no encontrada
+Column "nombre" not found [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.jdbc.JdbcResultSet.getColumnIndex(JdbcResultSet.java:3492)
+	at org.h2.jdbc.JdbcResultSet.findColumn(JdbcResultSet.java:178)
+	at com.j256.ormlite.jdbc.JdbcDatabaseResults.findColumn(JdbcDatabaseResults.java:102)
+	at com.j256.ormlite.field.FieldType.resultToJava(FieldType.java:848)
+	at com.j256.ormlite.stmt.mapped.BaseMappedQuery.mapRow(BaseMappedQuery.java:62)
+	at com.j256.ormlite.stmt.SelectIterator.getCurrent(SelectIterator.java:290)
+	at com.j256.ormlite.stmt.SelectIterator.nextThrow(SelectIterator.java:163)
+	at com.j256.ormlite.stmt.StatementExecutor.query(StatementExecutor.java:207)
+	at com.j256.ormlite.stmt.StatementExecutor.queryForAll(StatementExecutor.java:127)
+	at com.j256.ormlite.dao.BaseDaoImpl.queryForAll(BaseDaoImpl.java:251)
+	at BolsaDeEmpleo.Menu.main(Menu.java:100)
+2023-03-28 00:26:05 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "nombre" no encontrada
+Column "nombre" not found [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.jdbc.JdbcResultSet.getColumnIndex(JdbcResultSet.java:3492)
+	at org.h2.jdbc.JdbcResultSet.findColumn(JdbcResultSet.java:178)
+	at com.j256.ormlite.jdbc.JdbcDatabaseResults.findColumn(JdbcDatabaseResults.java:102)
+	at com.j256.ormlite.field.FieldType.resultToJava(FieldType.java:848)
+	at com.j256.ormlite.stmt.mapped.BaseMappedQuery.mapRow(BaseMappedQuery.java:62)
+	at com.j256.ormlite.stmt.SelectIterator.getCurrent(SelectIterator.java:290)
+	at com.j256.ormlite.stmt.SelectIterator.nextThrow(SelectIterator.java:163)
+	at com.j256.ormlite.stmt.StatementExecutor.query(StatementExecutor.java:207)
+	at com.j256.ormlite.stmt.StatementExecutor.queryForAll(StatementExecutor.java:127)
+	at com.j256.ormlite.dao.BaseDaoImpl.queryForAll(BaseDaoImpl.java:251)
+	at BolsaDeEmpleo.Menu.main(Menu.java:100)
+2023-03-28 00:27:20 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "ASPIRANTES" ya existe
+Table "ASPIRANTES" already exists; SQL statement:
+CREATE TABLE `aspirantes` (`cedula` VARCHAR(255) , `nombre` VARCHAR(255) , `edad` INTEGER , `anosExperiencia` INTEGER , `profesion` VARCHAR(255) , `telefono` VARCHAR(255) , PRIMARY KEY (`cedula`) ) [42101-214]
+2023-03-28 00:30:09 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "NOMBRE" no encontrada
+Column "NOMBRE" not found; SQL statement:
+INSERT INTO `aspirantes` (`cedula` ,`nombre` ,`edad` ,`anosExperiencia` ,`profesion` ,`telefono` ) VALUES (?,?,?,?,?,?) [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:749)
+	at org.h2.command.Parser.parseColumn(Parser.java:1256)
+	at org.h2.command.Parser.parseColumnList(Parser.java:1241)
+	at org.h2.command.Parser.parseInsert(Parser.java:1641)
+	at org.h2.command.Parser.parsePrepared(Parser.java:814)
+	at org.h2.command.Parser.parse(Parser.java:689)
+	at org.h2.command.Parser.parse(Parser.java:661)
+	at org.h2.command.Parser.prepareCommand(Parser.java:569)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:288)
+	at com.j256.ormlite.jdbc.JdbcDatabaseConnection.insert(JdbcDatabaseConnection.java:179)
+	at com.j256.ormlite.stmt.mapped.MappedCreate.insert(MappedCreate.java:91)
+	at com.j256.ormlite.stmt.StatementExecutor.create(StatementExecutor.java:464)
+	at com.j256.ormlite.dao.BaseDaoImpl.create(BaseDaoImpl.java:337)
+	at BolsaDeEmpleo.Menu.main(Menu.java:90)
+2023-03-28 00:35:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "nombre" no encontrada
+Column "nombre" not found [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.jdbc.JdbcResultSet.getColumnIndex(JdbcResultSet.java:3492)
+	at org.h2.jdbc.JdbcResultSet.findColumn(JdbcResultSet.java:178)
+	at com.j256.ormlite.jdbc.JdbcDatabaseResults.findColumn(JdbcDatabaseResults.java:102)
+	at com.j256.ormlite.field.FieldType.resultToJava(FieldType.java:848)
+	at com.j256.ormlite.stmt.mapped.BaseMappedQuery.mapRow(BaseMappedQuery.java:62)
+	at com.j256.ormlite.stmt.SelectIterator.getCurrent(SelectIterator.java:290)
+	at com.j256.ormlite.stmt.SelectIterator.nextThrow(SelectIterator.java:163)
+	at com.j256.ormlite.stmt.StatementExecutor.query(StatementExecutor.java:207)
+	at com.j256.ormlite.stmt.StatementExecutor.queryForAll(StatementExecutor.java:127)
+	at com.j256.ormlite.dao.BaseDaoImpl.queryForAll(BaseDaoImpl.java:251)
+	at BolsaDeEmpleo.Menu.main(Menu.java:100)
+2023-03-28 00:43:14 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "nombre" no encontrada
+Column "nombre" not found [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.jdbc.JdbcResultSet.getColumnIndex(JdbcResultSet.java:3492)
+	at org.h2.jdbc.JdbcResultSet.findColumn(JdbcResultSet.java:178)
+	at com.j256.ormlite.jdbc.JdbcDatabaseResults.findColumn(JdbcDatabaseResults.java:102)
+	at com.j256.ormlite.field.FieldType.resultToJava(FieldType.java:848)
+	at com.j256.ormlite.stmt.mapped.BaseMappedQuery.mapRow(BaseMappedQuery.java:62)
+	at com.j256.ormlite.stmt.SelectIterator.getCurrent(SelectIterator.java:290)
+	at com.j256.ormlite.stmt.SelectIterator.nextThrow(SelectIterator.java:163)
+	at com.j256.ormlite.stmt.SelectIterator.next(SelectIterator.java:176)
+	at BolsaDeEmpleo.Menu.main(Menu.java:221)
+2023-03-28 00:52:36 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "nombre" no encontrada
+Column "nombre" not found [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.jdbc.JdbcResultSet.getColumnIndex(JdbcResultSet.java:3492)
+	at org.h2.jdbc.JdbcResultSet.findColumn(JdbcResultSet.java:178)
+	at com.j256.ormlite.jdbc.JdbcDatabaseResults.findColumn(JdbcDatabaseResults.java:102)
+	at com.j256.ormlite.field.FieldType.resultToJava(FieldType.java:848)
+	at com.j256.ormlite.stmt.mapped.BaseMappedQuery.mapRow(BaseMappedQuery.java:62)
+	at com.j256.ormlite.stmt.SelectIterator.getCurrent(SelectIterator.java:290)
+	at com.j256.ormlite.stmt.SelectIterator.nextThrow(SelectIterator.java:163)
+	at com.j256.ormlite.stmt.StatementExecutor.query(StatementExecutor.java:207)
+	at com.j256.ormlite.stmt.StatementExecutor.queryForAll(StatementExecutor.java:127)
+	at com.j256.ormlite.dao.BaseDaoImpl.queryForAll(BaseDaoImpl.java:251)
+	at BolsaDeEmpleo.Menu.main(Menu.java:100)
+2023-03-28 00:57:40 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "NOMBRE" no encontrada
+Column "NOMBRE" not found; SQL statement:
+INSERT INTO `aspirantes` (`cedula` ,`nombre` ,`edad` ,`anosExperiencia` ,`profesion` ,`telefono` ) VALUES (?,?,?,?,?,?) [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:749)
+	at org.h2.command.Parser.parseColumn(Parser.java:1256)
+	at org.h2.command.Parser.parseColumnList(Parser.java:1241)
+	at org.h2.command.Parser.parseInsert(Parser.java:1641)
+	at org.h2.command.Parser.parsePrepared(Parser.java:814)
+	at org.h2.command.Parser.parse(Parser.java:689)
+	at org.h2.command.Parser.parse(Parser.java:661)
+	at org.h2.command.Parser.prepareCommand(Parser.java:569)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:288)
+	at com.j256.ormlite.jdbc.JdbcDatabaseConnection.insert(JdbcDatabaseConnection.java:179)
+	at com.j256.ormlite.stmt.mapped.MappedCreate.insert(MappedCreate.java:91)
+	at com.j256.ormlite.stmt.StatementExecutor.create(StatementExecutor.java:464)
+	at com.j256.ormlite.dao.BaseDaoImpl.create(BaseDaoImpl.java:337)
+	at BolsaDeEmpleo.Menu.main(Menu.java:90)
+2023-03-28 01:18:19 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "ASPIRANTES" ya existe
+Table "ASPIRANTES" already exists; SQL statement:
+CREATE TABLE `aspirantes` (`cedula` VARCHAR(255) , `nombre` VARCHAR(255) , `edad` INTEGER , `anosExperiencia` INTEGER , `profesion` VARCHAR(255) , `telefono` VARCHAR(255) , PRIMARY KEY (`cedula`) ) [42101-214]
+2023-03-28 01:18:56 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "ASPIRANTES" ya existe
+Table "ASPIRANTES" already exists; SQL statement:
+CREATE TABLE `aspirantes` (`cedula` VARCHAR(255) , `nombre` VARCHAR(255) , `edad` INTEGER , `anosExperiencia` INTEGER , `profesion` VARCHAR(255) , `telefono` VARCHAR(255) , PRIMARY KEY (`cedula`) ) [42101-214]
+2023-03-28 01:22:15 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "ASPIRANTES" ya existe
+Table "ASPIRANTES" already exists; SQL statement:
+CREATE TABLE `aspirantes` (`cedula` VARCHAR(255) , `nombre` VARCHAR(255) , `edad` INTEGER , `anosExperiencia` INTEGER , `profesion` VARCHAR(255) , `telefono` VARCHAR(255) , PRIMARY KEY (`cedula`) ) [42101-214]
+2023-03-28 01:27:11 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "nombre" no encontrada
+Column "nombre" not found [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.jdbc.JdbcResultSet.getColumnIndex(JdbcResultSet.java:3492)
+	at org.h2.jdbc.JdbcResultSet.findColumn(JdbcResultSet.java:178)
+	at com.j256.ormlite.jdbc.JdbcDatabaseResults.findColumn(JdbcDatabaseResults.java:102)
+	at com.j256.ormlite.field.FieldType.resultToJava(FieldType.java:848)
+	at com.j256.ormlite.stmt.mapped.BaseMappedQuery.mapRow(BaseMappedQuery.java:62)
+	at com.j256.ormlite.stmt.SelectIterator.getCurrent(SelectIterator.java:290)
+	at com.j256.ormlite.stmt.SelectIterator.nextThrow(SelectIterator.java:163)
+	at com.j256.ormlite.stmt.SelectIterator.next(SelectIterator.java:176)
+	at BolsaDeEmpleo.Menu.main(Menu.java:275)
+2023-03-28 01:36:27 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "NOMBRE" no encontrada
+Column "NOMBRE" not found; SQL statement:
+INSERT INTO `aspirantes` (`cedula` ,`nombre` ,`edad` ,`anosExperiencia` ,`profesion` ,`telefono` ) VALUES (?,?,?,?,?,?) [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:749)
+	at org.h2.command.Parser.parseColumn(Parser.java:1256)
+	at org.h2.command.Parser.parseColumnList(Parser.java:1241)
+	at org.h2.command.Parser.parseInsert(Parser.java:1641)
+	at org.h2.command.Parser.parsePrepared(Parser.java:814)
+	at org.h2.command.Parser.parse(Parser.java:689)
+	at org.h2.command.Parser.parse(Parser.java:661)
+	at org.h2.command.Parser.prepareCommand(Parser.java:569)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:288)
+	at com.j256.ormlite.jdbc.JdbcDatabaseConnection.insert(JdbcDatabaseConnection.java:179)
+	at com.j256.ormlite.stmt.mapped.MappedCreate.insert(MappedCreate.java:91)
+	at com.j256.ormlite.stmt.StatementExecutor.create(StatementExecutor.java:464)
+	at com.j256.ormlite.dao.BaseDaoImpl.create(BaseDaoImpl.java:337)
+	at BolsaDeEmpleo.Menu.main(Menu.java:90)
+2023-03-28 01:46:05 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "ASPIRANTES" ya existe
+Table "ASPIRANTES" already exists; SQL statement:
+CREATE TABLE `aspirantes` (`cedula` VARCHAR(255) , `nombre` VARCHAR(255) , `edad` INTEGER , `anosExperiencia` INTEGER , `profesion` VARCHAR(255) , `telefono` VARCHAR(255) , PRIMARY KEY (`cedula`) ) [42101-214]
+2023-03-28 01:47:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "ASPIRANTES" ya existe
+Table "ASPIRANTES" already exists; SQL statement:
+CREATE TABLE `aspirantes` (`cedula` VARCHAR(255) , `nombre` VARCHAR(255) , `edad` INTEGER , `anosExperiencia` INTEGER , `profesion` VARCHAR(255) , `telefono` VARCHAR(255) , PRIMARY KEY (`cedula`) ) [42101-214]
+2023-03-28 01:47:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "ASPIRANTES" ya existe
+Table "ASPIRANTES" already exists; SQL statement:
+CREATE TABLE `aspirantes` (`cedula` VARCHAR(255) , `nombre` VARCHAR(255) , `edad` INTEGER , `anosExperiencia` INTEGER , `profesion` VARCHAR(255) , `telefono` VARCHAR(255) , PRIMARY KEY (`cedula`) ) [42101-214]
+2023-03-28 09:32:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "nombre" no encontrada
+Column "nombre" not found [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.jdbc.JdbcResultSet.getColumnIndex(JdbcResultSet.java:3492)
+	at org.h2.jdbc.JdbcResultSet.findColumn(JdbcResultSet.java:178)
+	at com.j256.ormlite.jdbc.JdbcDatabaseResults.findColumn(JdbcDatabaseResults.java:102)
+	at com.j256.ormlite.field.FieldType.resultToJava(FieldType.java:848)
+	at com.j256.ormlite.stmt.mapped.BaseMappedQuery.mapRow(BaseMappedQuery.java:62)
+	at com.j256.ormlite.stmt.SelectIterator.getCurrent(SelectIterator.java:290)
+	at com.j256.ormlite.stmt.SelectIterator.nextThrow(SelectIterator.java:163)
+	at com.j256.ormlite.stmt.StatementExecutor.query(StatementExecutor.java:207)
+	at com.j256.ormlite.stmt.StatementExecutor.queryForAll(StatementExecutor.java:127)
+	at com.j256.ormlite.dao.BaseDaoImpl.queryForAll(BaseDaoImpl.java:251)
+	at BolsaDeEmpleo.Menu.main(Menu.java:100)
+2023-03-28 09:37:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "NOMBRE" no encontrada
+Column "NOMBRE" not found; SQL statement:
+INSERT INTO `aspirantes` (`cedula` ,`nombre` ,`edad` ,`anosExperiencia` ,`profesion` ,`telefono` ) VALUES (?,?,?,?,?,?) [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:749)
+	at org.h2.command.Parser.parseColumn(Parser.java:1256)
+	at org.h2.command.Parser.parseColumnList(Parser.java:1241)
+	at org.h2.command.Parser.parseInsert(Parser.java:1641)
+	at org.h2.command.Parser.parsePrepared(Parser.java:814)
+	at org.h2.command.Parser.parse(Parser.java:689)
+	at org.h2.command.Parser.parse(Parser.java:661)
+	at org.h2.command.Parser.prepareCommand(Parser.java:569)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:288)
+	at com.j256.ormlite.jdbc.JdbcDatabaseConnection.insert(JdbcDatabaseConnection.java:179)
+	at com.j256.ormlite.stmt.mapped.MappedCreate.insert(MappedCreate.java:91)
+	at com.j256.ormlite.stmt.StatementExecutor.create(StatementExecutor.java:464)
+	at com.j256.ormlite.dao.BaseDaoImpl.create(BaseDaoImpl.java:337)
+	at BolsaDeEmpleo.Menu.main(Menu.java:90)
+2023-03-28 09:39:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "ASPIRANTES" ya existe
+Table "ASPIRANTES" already exists; SQL statement:
+CREATE TABLE `aspirantes` (`cedula` VARCHAR(255) , `nombre` VARCHAR(255) , `edad` INTEGER , `anosExperiencia` INTEGER , `profesion` VARCHAR(255) , `telefono` VARCHAR(255) , PRIMARY KEY (`cedula`) ) [42101-214]
